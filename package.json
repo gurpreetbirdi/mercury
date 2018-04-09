@@ -4,7 +4,8 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
-    "payment-management": "^1.2.1",
+    "global-store-mc": "0.0.2",
+    "payment-management-mc": "0.0.8",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.7",

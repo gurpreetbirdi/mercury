@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { PaymentManagement } from 'payment-management'
 import Header from './components/Header'
 import Sidebar from './components/Sidebar'
 import './App.css'
+import {PM, PaymentManager} from 'payment-management-mc'
 
 class App extends Component {
   render() {
@@ -11,7 +11,7 @@ class App extends Component {
         <Header />
         <Sidebar />
         <div className='body'>
-          <PaymentManagement />
+          <PaymentManager/>
         </div>
       </div>
     );

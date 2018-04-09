@@ -1,6 +1,6 @@
 import React from 'react'
 import './Sidebar.css'
-import { update } from 'payment-management'
+import { update } from 'global-store-mc'
 import { connect } from 'react-redux'
 
 class Sidebar extends React.Component {
@@ -13,6 +13,9 @@ class Sidebar extends React.Component {
                 <a href="#">Media</a>
                 <a href="#">Admin Control</a>
                 <input type='text' onChange={e=>this.props.dispatch(update(e.target.value))}/>
+                <div style={{color:'white'}}>
+                    MC: {this.props.data}
+                </div>
             </div>
         );
     }
